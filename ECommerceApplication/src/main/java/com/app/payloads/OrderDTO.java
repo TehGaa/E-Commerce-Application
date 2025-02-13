@@ -7,6 +7,7 @@ import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import com.app.entites.Bank;
 
 @Data
 @NoArgsConstructor
@@ -20,5 +21,5 @@ public class OrderDTO {
 	private PaymentDTO payment;
 	private Double totalAmount;
 	private String orderStatus;
-
+	private Bank bank = null;
 }
